@@ -127,7 +127,7 @@ input {
     border: 2px solid #CF3031;
     border-radius: 14px;
     background: #fef6f4;
-    background-image: url("img/img-heart.png");
+    background-image: url("img/img-heart.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
@@ -135,7 +135,7 @@ input {
 input:checked {
     background: #FFD4C9;
     border: 2px solid #CF3031;
-    background-image: url("img/img-heart.png");
+    background-image: url("img/img-heart.svg");
     background-repeat: no-repeat;
     background-position: center;
 }
