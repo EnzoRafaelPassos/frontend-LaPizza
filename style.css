@@ -5,31 +5,34 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+/* none */
+.img-plant, .img-fish,  .img-mashroom, .img-chili, .img-leaf, .img-restaurant{
+    display: none;
+}
+
+/* header */
 .bg-pizza {
-    width: 100%;  
-}
-.bg-pizza,
-.bg-logo {
-    position: absolute;
-}
-.bg-lapizza {
-    display: flex;
-    justify-content: center;
     width: 100%;
-    height: 197px;
-    margin-bottom: 80px;
+   
 }
 
 .bg-logo {
+    position: absolute;
     width: 200px;
-    height: 197px;
+}
+
+.bg-lapizza {
     display: flex;
+    justify-content: center;
     align-items: center;
+    width: 100%;
+
 }
 
 /* body */
 
-.content-pizzas {
+.cards {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -59,7 +62,7 @@
     margin-bottom: 250px;
 }
 
-.information-pizza{
+.information-pizza {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -70,10 +73,12 @@
 .title {
     color: #2e2e2e;
     margin-bottom: 80px;
-   
+    text-align: center;
+    margin-top: 100px;
 }
 
-.title-card, .p-card {
+.title-card,
+.p-card {
     text-align: center;
 }
 
@@ -93,7 +98,7 @@
 
 .price-pizza {
     text-align: center;
-    font-size:32px;
+    font-size: 32px;
     font-weight: 700;
 
 }
@@ -111,7 +116,7 @@
     background-color: #FFA200;
 }
 
-.buy-pizza:hover{
+.buy-pizza:hover {
     background-color: #f8b747;
 }
 
@@ -151,14 +156,15 @@ input:checked {
 
 /* Sobre o la Pizza */
 
-.aboutPizza{
+.aboutPizza {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.h1-aboutPizza{
+
+.h1-aboutPizza {
     margin-bottom: 15px;
     color: #2e2e2e;
     text-align: center;
@@ -171,7 +177,7 @@ input:checked {
     margin-bottom: 20px;
 }
 
-.button-aboutPizza{
+.button-aboutPizza {
     width: 110px;
     height: 30px;
     background-color: #FFA200;
@@ -188,18 +194,7 @@ footer {
     color: #2e2e2e;
 }
 
-@media screen and (min-width:500px){
-    .bg-lapizza {
-        height: 370px;
-
-    }
-}
-
-@media screen and (min-width:850px){
-    .bg-lapizza {
-        height: 500px;
-
-    }
+@media screen and (min-width:1024px) {
 
     .bg-logo {
         width: 400px;
@@ -207,4 +202,109 @@ footer {
         display: flex;
         align-items: center;
     }
+
+    .img-plant {
+        display: flex;
+        position: absolute;
+        top: 510px;
+    }
+
+    .img-fish {
+        display: flex;
+        position: absolute;
+        left: 250px;
+        top: 600px;
+    }
+
+    .img-mashroom {
+        display: flex;
+        position: absolute;
+        right: 150px;
+        top: 640px;
+    }
+
+    .img-leaf {
+        display: flex;
+        position: absolute;
+        right: 5px;
+        top: 890px;
+    }
+
+    .img-chili{
+        display: flex;
+        position: absolute;
+        top: 1100px;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: row;
+        padding: 0 50px 0 50px;
+    }
+
+    .bg-pizza {
+        display: block;
+        width: 100%;
+        height: 560px;
+    }
+
+    .card {
+        position: relative;
+    }
+
+    .content-pizzas {
+        margin-bottom: 100px;
+    }
+
+    .content-aboutPizza{
+        display: flex;
+        padding: 90px;
+        background-color: #FCFCFC;
+        width: 100%;
+    }
+
+    .img-restaurant {
+        display: flex;
+        padding-right: 50px;
+    }
+
+    .img-pizza {
+        position: absolute;
+        left: 10px;
+       margin-top: 30px;
+    }
+
+    .img-tomato{
+        position: absolute;
+        right: 30px;
+        top: 1190px;
+    }
+
+    .img-pizza-pic {
+        position: absolute;
+        right: 30px;
+        top: 1600px;
+    }
+
+    .aboutPizza {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    .h1-aboutPizza {
+        margin-bottom: 15px;
+        color: #2e2e2e;
+        text-align: left;
+    }
+    
+    .p-aboutPizza {
+        margin: 0px;
+        text-align: left;
+        color: #2E2E2E;
+        margin-bottom: 20px;
+        line-height: 26px;
+    }
+   
 }
