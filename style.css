@@ -7,7 +7,7 @@
 
 
 /* none */
-.img-plant, .img-fish,  .img-mashroom, .img-chili, .img-leaf, .img-restaurant{
+.img-plant, .img-fish,  .img-mashroom, .img-chili, .img-leaf, .img-restaurant, .img-pizza , .img-tomato, .img-pizza-pic{
     display: none;
 }
 
@@ -269,18 +269,21 @@ footer {
     }
 
     .img-pizza {
+        display: flex;
         position: absolute;
         left: 10px;
        margin-top: 30px;
     }
 
     .img-tomato{
+        display: flex;
         position: absolute;
         right: 30px;
         top: 1190px;
     }
 
     .img-pizza-pic {
+        display: flex;
         position: absolute;
         right: 30px;
         top: 1600px;
